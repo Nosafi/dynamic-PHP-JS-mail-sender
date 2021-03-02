@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/assets/style/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="book_wrapper">
+        <div class="book_one">
+          <img
+            src="/assets/img/close_book.png"
+            onclick="on_img_click('first')"
+            data-switch="false"
+            class="first_book"
+            alt="first_book"
+          />
+        </div>
+        <div class="book_two">
+          <img
+            src="/assets/img/close_book.png"
+            onclick="on_img_click('second')"
+            data-switch="false"
+            class="second_book"
+            alt="second_book"
+          />
+        </div>
+        <div class="book_three">
+          <img
+            src="/assets/img/close_book.png"
+            onclick="on_img_click('third')"
+            data-switch="false"
+            class="third_book"
+            alt="third_book"
+          />
+        </div>
+      </div>
+      <div class="form_wrapper">
+        <form action="src/send.php" method="post">
+          <input type="email" class="email_input" id="email" name="email" />
+          <input
+            type="checkbox"
+            class="first_book_check"
+            name="ch_1"
+            style="display: none"
+          />
+          <input
+            type="checkbox"
+            class="second_book_check"
+            name="ch_2"
+            style="display: none"
+          />
+          <input
+            type="checkbox"
+            class="third_book_check"
+            name="ch_3"
+            style="display: none"
+          />
+          <input type="submit" class="submit_bottom" value="Отправить" />
+        </form>
+      </div>
+    </div>
+    <script src="/src/script.js"></script>
+  </body>
+</html>
